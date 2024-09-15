@@ -1,18 +1,16 @@
-// src/pages/api/fileparse.ts
-
+// src/pages/api/file-structure.ts
 import type { APIRoute } from 'astro';
-import { getFileStructure } from '../../lib/fileparse';
 
-export const GET: APIRoute = async () => {
+export const get: APIRoute = async () => {
   try {
-    const fileStructure = getFileStructure();
-    return new Response(fileStructure, {
-      headers: { 'Content-Type': 'application/json' },
+    const jsonPath = './public/api/fileparse.json';
+    const fileStructure = require(jsonPath);
+    return new Response(JSON.stringify(fileStructure), {
+      headers: {
+        'Content-Type': 'application/json',
+      },
     });
   } catch (error) {
-    return new Response(JSON.stringify({ error: 'Failed to generate file structure' }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' },
-    });
+    return new Response('Error reading file structure', { status: 500 });
   }
 };
