@@ -37,7 +37,6 @@ async function generateHtmlFromApi() {
         const structureElement = createElementFromStructure(apiData);
         const sidebar = document.getElementById('sidebar');
         if (sidebar) {
-            sidebar.innerHTML = ''; 
             sidebar.appendChild(structureElement);
             const folders = document.querySelectorAll('.folder');
             folders.forEach(folder => {

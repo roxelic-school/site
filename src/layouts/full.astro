@@ -7,7 +7,9 @@ interface Props {
 const { desc } = Astro.props;
 const { title } = Astro.props;
 
-import '../res/css/style.css'
+import Sidebar from '../comp/sidebar.astro';
+
+import '../res/css/style.css';
 ---
 
 <!doctype html>
@@ -28,6 +30,11 @@ import '../res/css/style.css'
 		<title>{ title }</title>
 	</head>
 	<body>
-		<slot />
+		<div id="full">
+			<Sidebar />
+			<div id="maincont">
+				<slot/>
+			</div>
+		</div>
 	</body>
 </html>

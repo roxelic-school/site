@@ -1,27 +1,50 @@
 html {
     overflow: hidden;
+    background-color: black;
+}
+
+hr {
+    border-color: white !important;
 }
 
 #sidebar {
     width: 20vw;
     height: 100vh;
-    background-color: teal;
+    border-right: 3px solid crimson;
     padding: 1vh;
     overflow-y: scroll;
+    display: block;
+}
+#maincont {
+    display: block;
+    width: 100%;
+    padding: 2vw;
+}
+#full {
+    display: flex;
 }
 
 @media (max-width: 768px) {
     #sidebar {
-        width: 98vw;
+        right: 0;
+        width: 100%;
         height: auto;
         max-height: 15vh;
-        position: fixed;
+        position: relative;
+        display: block;
         top: 0;
         left: 0;
-        background-color: teal;
         padding: 1vw;
         overflow-y: auto;
         z-index: 1000;
+        border-right: none;
+        border-bottom: 3px solid crimson;
+    }
+    #full {
+        display: block;
+    }
+    #maincont {
+        padding: 0;
     }
 }
 
@@ -29,20 +52,29 @@ html {
 .folder {
     width: 100%;
     height: 25px;
-    background-color: black;
-    color: white;
     cursor: pointer;
     padding: 5px;
     box-sizing: border-box;
     position: relative;
+    border-bottom: 1.5px solid crimson;
+}
+
+.folder:hover{
+    background-color: #000;  
 }
 
 .file {
     width: 100%;
     height: 25px;
-    background-color: green;
+    background-color: #131c26;
     padding: 5px;
     box-sizing: border-box;
+    border-bottom: 1.5px solid crimson;
+    overflow: hidden;
+}
+
+.file:hover {
+    background-color: #2e2e2e;  
 }
 
 .hold {
