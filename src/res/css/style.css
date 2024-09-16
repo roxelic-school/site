@@ -11,17 +11,22 @@ hr {
     width: 20vw;
     min-width: 20vw;
     height: 100vh;
+
     border-right: 3px solid crimson;
+
     padding: 1vh;
+
     overflow-y: scroll;
     display: block;
 }
 #maincont {
-    display: block;
     width: 100%;
     height: 95vh;
+
     padding: 2vw;
+
     overflow: scroll;
+    display: block;
 }
 #full {
     display: flex;
@@ -29,39 +34,47 @@ hr {
 
 @media (max-width: 768px) {
     #sidebar {
+        background-color: #000;
+
         width: 100%;
-        height: auto;
         height: 15vh;
-        position: absolute;
-        display: block;
+
         bottom: 0;
         left: 0;
+
         padding: 1vw;
-        overflow-y: auto;
-        z-index: 1000;
+        margin-top: 5vh;
+        
         border-right: none;
         border-top: 3px solid crimson;
-        margin-top: 5vh;
+
+        overflow-y: auto;
+        position: absolute;
+        display: block;
     }
     #full {
         display: block;
     }
     #maincont {
-        padding: 2vw;
         height: 80vh;
+
+        padding: 2vw;
     }
 }
 
 
 .folder {
+    color: white;
+
     width: 100%;
     height: 25px;
-    cursor: pointer;
+    
     padding: 5px;
-    box-sizing: border-box;
-    position: relative;
     border-bottom: 1.5px solid crimson;
-    color: white;
+    box-sizing: border-box;
+
+    cursor: pointer;
+    position: relative;
 }
 
 .folder:hover{
@@ -69,12 +82,16 @@ hr {
 }
 
 .file {
+    background-color: #131c26;
+
     width: 100%;
     height: 25px;
-    background-color: #131c26;
+
     padding: 5px;
+
     box-sizing: border-box;
     border-bottom: 1.5px solid crimson;
+
     overflow: hidden;
 }
 
@@ -84,11 +101,14 @@ hr {
 
 .hold {
     max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
-    padding-left: 20px;
+
     padding-top: 0;
+    padding-left: 20px;
+
+    opacity: 0;
+
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
     position: relative;
 }
 

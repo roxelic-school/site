@@ -1,5 +1,5 @@
 ---
-layout: '../../layouts/md/main.astro'
+layout: '../layouts/md/main.astro'
 title: "how this website works"
 desc: "why i should not be trusted to use a computer"
 ---

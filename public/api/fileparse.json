@@ -1,17 +1,9 @@
 {
-  "computer science": {},
-  "games design": {
-    "silly": [
-      "//foreverpain.lol",
-      "foreverpain"
-    ],
+  "\\computer science\\": {},
+  "\\games design\\": {
     "Game development planning": [
       "/content/games design",
       "Game development planning"
     ]
-  },
-  "how this website works": [
-    "/content/",
-    "how this website works"
-  ]
+  }
 }
