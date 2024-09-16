@@ -3,7 +3,7 @@ import type { APIRoute } from 'astro';
 
 export const get: APIRoute = async () => {
   try {
-    const jsonPath = './public/api/fileparse.json';
+    const jsonPath = './public/api/file-structure.json';
     const fileStructure = require(jsonPath);
     return new Response(JSON.stringify(fileStructure), {
       headers: {

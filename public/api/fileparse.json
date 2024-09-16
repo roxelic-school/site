@@ -1,0 +1,16 @@
+{
+  "how this website works": [
+    "/content/",
+    "how this website works"
+  ],
+  "test": {
+    "beep": [
+      "//example.com",
+      "example"
+    ],
+    "hi": [
+      "/content/test/z",
+      "hi"
+    ]
+  }
+}

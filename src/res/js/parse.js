@@ -29,7 +29,7 @@ function createElementFromStructure(structure) {
 
 async function generateHtmlFromApi() {
     try {
-        const response = await fetch('/api/fileparse');
+        const response = await fetch('/api/fileparse.json');
         if (!response.ok) {
             throw new Error(`Network response was not ok: ${response.statusText}`);
         }
