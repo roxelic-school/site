@@ -39,6 +39,7 @@ hr {
         z-index: 1000;
         border-right: none;
         border-bottom: 3px solid crimson;
+        margin-bottom: 5vh;
     }
     #full {
         display: block;

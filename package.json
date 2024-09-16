@@ -3,10 +3,10 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
+    "json": "node ./src/lib/pain.js",
     "dev": "astro dev",
     "start": "astro dev",
-    "generate-file-structure": "ts-node src/lib/fileparse.ts",
-    "build": "astro check && astro build",
+    "build": "npm run json && astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
