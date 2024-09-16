@@ -28,7 +28,7 @@ function createElementFromStructure(structure) {
 }
 
 function decodeAndNormalizeUrl(url) {
-    return decodeURIComponent(url.replace('/content/', ''));
+    return decodeURIComponent(url.replace('/content/', '').replace(/\/$/, ''));
 }
 
 function openFoldersToFile(folderElement) {
