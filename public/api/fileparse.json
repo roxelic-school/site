@@ -4,17 +4,20 @@
     "GREGRIGATION": [
       "https://media.discordapp.net/attachments/1281313759918297193/1285555832955867199/048dc2b7-ee21-4f42-97ab-e457d2b6727d.png?ex=66eab2ab&is=66e9612b&hm=13f0f28b84871de711463ae2fdb3f37501888d9426ee3a70f8c65d50bb2fe269&=&format=webp&quality=lossless&width=651&height=540",
       "GREGRIGATION",
-      "none"
+      "",
+      ""
     ],
-    "A look at game balance": [
+    "A Look at Game Balance": [
       "/content/games design/GameBalance",
-      "A look at game balance",
-      "Game balance and unbalanced games"
+      "A Look at Game Balance",
+      "Game balance and unbalanced games",
+      "17/09/2024"
     ],
     "Game development planning": [
       "/content/games design",
       "Game development planning",
-      "A markdown version of my game development powerpoint"
+      "A markdown version of my game development powerpoint",
+      "17/09/2024"
     ]
   }
 }

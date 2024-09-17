@@ -2,6 +2,7 @@
 layout: '../../../layouts/md/main.astro'
 title: "Game development planning"
 desc: "A markdown version of my game development powerpoint"
+upDate: 17/09/2024
 ---
 
 ## Client

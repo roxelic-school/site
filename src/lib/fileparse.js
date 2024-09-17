@@ -37,7 +37,8 @@ async function buildFileStructure(dirPath) {
         const { data } = matter(fileContent);
         const name = data.title || path.basename(itemPath, fileExt);
         const desc = data.desc || path.basename(itemPath, fileExt);
-        structure[name] = [url, name, desc];
+        const date = data.upDate || path.basename(itemPath, fileExt);
+        structure[name] = [url, name, desc, date];
         continue;
       }
       
@@ -47,7 +48,8 @@ async function buildFileStructure(dirPath) {
         const { data } = matter(fileContent);
         const name = data.title || path.basename(itemPath, fileExt);
         const desc = data.desc || path.basename(itemPath, fileExt);
-        structure[name] = [url, name, desc];
+        const date = data.upDate || path.basename(itemPath, fileExt);
+        structure[name] = [url, name, desc, date];
       }
     }
   }

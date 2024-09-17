@@ -2,6 +2,7 @@
 layout: '../layouts/md/main.astro'
 title: "how this website works"
 desc: "why i should not be trusted to use a computer"
+upDate: 17/09/2024
 ---
 The way that this website works is really silly, i know it is and i admit that.
 <br><br>
