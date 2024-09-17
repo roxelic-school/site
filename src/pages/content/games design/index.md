@@ -126,4 +126,4 @@ There are 3(+1?) chapters to this game
     * Chapter 3 released on October 21, 2022
     * Which is when all 3 chapters was combine into Faith: the unholy trinity
 
-The story follows
+The story follows 

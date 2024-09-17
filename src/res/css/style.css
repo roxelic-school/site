@@ -31,6 +31,38 @@ hr {
 #full {
     display: flex;
 }
+#hood {
+    width: 100vw;
+    height: 25px;
+    background-color: #000;
+    border-bottom: 1px solid crimson;
+    margin: -2vw;
+    margin-bottom: 5vh;
+}
+
+#searchBar {
+    color: white;
+    width:20vw;
+    height: 23px;
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid crimson;
+}
+#results {
+    width:20vw;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+#results .result {
+  border-bottom: 1px solid #eee;
+}
+#results .result:last-child {
+  border-bottom: none;
+}
+#results .result:hover {
+  background-color: #e0e0e0;
+}
 
 @media (max-width: 768px) {
     #sidebar {
@@ -59,6 +91,12 @@ hr {
         height: 75vh;
 
         padding: 2vw;
+    }
+    #searchBar {
+        width: 100vw;
+    }
+    #results {
+        width: 100vw;
     }
 }
 

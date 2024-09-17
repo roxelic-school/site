@@ -1,9 +1,15 @@
 {
   "\\computer science\\": {},
   "\\games design\\": {
+    "A look at game balance": [
+      "/content/games design/GameBalance",
+      "A look at game balance",
+      "Game balance and unbalanced games"
+    ],
     "Game development planning": [
       "/content/games design",
-      "Game development planning"
+      "Game development planning",
+      "A markdown version of my game development powerpoint"
     ]
   }
 }

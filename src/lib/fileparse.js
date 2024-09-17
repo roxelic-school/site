@@ -36,7 +36,8 @@ async function buildFileStructure(dirPath) {
         const fileContent = await fs.readFile(itemPath, 'utf-8');
         const { data } = matter(fileContent);
         const name = data.title || path.basename(itemPath, fileExt);
-        structure[name] = [url, name];
+        const desc = data.desc || path.basename(itemPath, fileExt);
+        structure[name] = [url, name, desc];
         continue;
       }
       
@@ -45,7 +46,8 @@ async function buildFileStructure(dirPath) {
         const fileContent = await fs.readFile(itemPath, 'utf-8');
         const { data } = matter(fileContent);
         const name = data.title || path.basename(itemPath, fileExt);
-        structure[name] = [url, name];
+        const desc = data.desc || path.basename(itemPath, fileExt);
+        structure[name] = [url, name, desc];
       }
     }
   }

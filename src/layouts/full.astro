@@ -8,6 +8,7 @@ const { desc } = Astro.props;
 const { title } = Astro.props;
 
 import Sidebar from '../comp/sidebar.astro';
+import Hood from '../comp/hood.astro';
 
 import '../res/css/style.css';
 ---
@@ -33,6 +34,10 @@ import '../res/css/style.css';
 		<div id="full">
 			<Sidebar />
 			<div id="maincont">
+				<Hood 
+					desc={ desc }
+					title={ title }
+				/>
 				<slot/>
 			</div>
 		</div>
