@@ -98,6 +98,9 @@ hr {
     #results {
         width: 100vw;
     }
+    #titletext {
+        display: none !important;
+    }
 }
 
 
@@ -114,6 +117,11 @@ hr {
     cursor: pointer;
     position: relative;
 }
+.highlight {
+    background-color: #ffcc99; 
+    font-weight: bold;
+    border-left: 3px solid orange;
+  }
 
 .folder:hover{
     background-color: #000;  
