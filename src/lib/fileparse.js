@@ -6,7 +6,7 @@ const contentDir = path.resolve('src/pages/content');
 
 async function buildFileStructure(dirPath) {
   const structure = {};
-  const detailsJsonPath = path.join(dirPath, 'details.json');
+  const detailsJsonPath = path.join(dirPath, '_details.json');
   
   try {
     await fs.access(detailsJsonPath);
