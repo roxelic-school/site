@@ -1,16 +1,8 @@
 ---
-interface Props {
-	title: string;
-    desc: string;
-	upDate: string;
-}
-
-const { desc } = Astro.props;
-const { title } = Astro.props;
-const { upDate } = Astro.props;
+const { desc, title, upDate, tags } = Astro.props;
 
 import Layout from '../full.astro'
 ---
-<Layout desc={ desc } title={ title } upDate={ upDate }>
+<Layout desc={ desc } title={ title } upDate={ upDate } tags={ tags }>
 	<slot />
 </Layout>

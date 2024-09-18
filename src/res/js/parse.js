@@ -15,6 +15,7 @@ function createElementFromStructure(structure) {
         } else if (Array.isArray(value)) {
             const link = document.createElement('a');
             link.href = value[0];
+            link.title = value[2];
 
             const file = document.createElement('div');
             file.classList.add('file');

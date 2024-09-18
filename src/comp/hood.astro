@@ -1,20 +1,19 @@
 ---
-interface Props {
-	title: string;
-  desc: string;
-  upDate: string;
-}
-
-const { desc } = Astro.props;
-const { title } = Astro.props;
-const { upDate } = Astro.props;
+const { desc, title, upDate, tags } = Astro.props;
 ---
-<div style="display: flex; flex-direction: column; position: relative; width: auto;" id="hood">
-  <div style="display: flex; align-items: center;">
+<div style="display: flex; flex-direction: column; position: relative; width: auto; max-height: 3vh;" id="hood">
+  <div style="display: flex; align-items: center;max-height: 3vh;">
     <input type="text" id="searchBar" placeholder="Search...">
-    <p id="titletext">{ desc } - { title } - {upDate}</p>
+    <p id="titletext" style="overflow: hidden !important;max-height: 3vh;font-size: small;">{ desc } - { title } - { upDate } - [{ tags.join(" \\ ") }]</p>
   </div>
   <div id="dropdown" style="position: relative; width: 200px;">
     <div id="results" style="position: absolute;"></div>
   </div>
 </div>
+<script>
+  const titletext = document.getElementById("titletext");
+  titletext?.addEventListener("click", handleclick);
+  async function handleclick(){
+    alert(titletext?.innerText);
+  }
+</script>

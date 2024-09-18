@@ -1,13 +1,5 @@
 ---
-interface Props {
-	title: string;
-    desc: string;
-	upDate: string;
-}
-
-const { desc } = Astro.props;
-const { title } = Astro.props;
-const { upDate } = Astro.props;
+const { desc, title, upDate, tags } = Astro.props;
 
 import Sidebar from '../comp/sidebar.astro';
 import Hood from '../comp/hood.astro';
@@ -41,6 +33,7 @@ import '../res/css/style.css';
 					desc={ desc }
 					title={ title }
 					upDate={ upDate }
+					tags={ tags }
 				/>
 				<slot/>
 			</div>

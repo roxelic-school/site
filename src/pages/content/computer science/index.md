@@ -3,6 +3,7 @@ layout: '../../../layouts/md/main.astro'
 title: "Initial design planning"
 desc: "The initial ideas for my computer science project"
 upDate: 17/09/2024
+tags: ["project", "computer science"]
 ---
 ## task
 The task is currently to make 3 or more problems that could be solved with code based solutions, the official languages are limiting in what kinds of project i can undertake and it must solve an issue. Above all, it must be within the scope of my abilities and be possible in the 2 years i have. (Which looking at what ive done with the website in 3 days is a pretty large scope)

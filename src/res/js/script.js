@@ -59,8 +59,15 @@ function search() {
   for (const category in data) {
     if (Object.keys(data[category]).length === 0) continue;
     for (const item in data[category]) {
-      const [url, title, desc, date] = data[category][item];
-      if (title.toLowerCase().includes(query) || desc.toLowerCase().includes(query)) {
+      const [url, title, desc, date, tags] = data[category][item];
+      const safeTags = tags || [];
+
+      const matchesTitle = title.toLowerCase().includes(query);
+      const matchesDesc = desc.toLowerCase().includes(query);
+      const matchesDate = date.toLowerCase().includes(query);
+      const matchesTags = safeTags.some(tag => tag.toLowerCase().includes(query));
+
+      if (matchesTitle || matchesDesc || matchesDate || matchesTags) {
         if (resultCount >= 5) break;
         currentResults.push({ url, title, date });
         const resultElement = document.createElement('div');
@@ -83,6 +90,8 @@ function search() {
   selectedIndex = -1;
   updateHighlightedResult();
 }
+
+
 
 function handleKeydown(event) {
   const resultsDiv = document.getElementById('results');

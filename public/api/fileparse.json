@@ -4,27 +4,51 @@
       "/content/computer science",
       "Initial design planning",
       "The initial ideas for my computer science project",
-      "17/09/2024"
+      "17/09/2024",
+      [
+        "project",
+        "computer science"
+      ]
+    ],
+    "Section One [0]": [
+      "/content/computer science/section1-notes",
+      "Section One [0]",
+      "The notes I took on the first lesson of Section One",
+      "18/09/2024",
+      [
+        "buses",
+        "John von Neumann",
+        "CPU"
+      ]
     ]
   },
   "\\games design\\": {
     "GREGRIGATION": [
-      "https://media.discordapp.net/attachments/1281313759918297193/1285555832955867199/048dc2b7-ee21-4f42-97ab-e457d2b6727d.png?ex=66eab2ab&is=66e9612b&hm=13f0f28b84871de711463ae2fdb3f37501888d9426ee3a70f8c65d50bb2fe269&=&format=webp&quality=lossless&width=651&height=540",
+      "/greg.jpg",
       "GREGRIGATION",
-      "",
-      ""
+      "GREGRIGATION",
+      "17/09/2024"
     ],
     "A Look at Game Balance": [
       "/content/games design/GameBalance",
       "A Look at Game Balance",
       "Game balance and unbalanced games",
-      "17/09/2024"
+      "17/09/2024",
+      [
+        "game balance",
+        "game design"
+      ]
     ],
     "Game development planning": [
       "/content/games design",
       "Game development planning",
       "A markdown version of my game development powerpoint",
-      "17/09/2024"
+      "17/09/2024",
+      [
+        "initial project",
+        "game design",
+        "reasearch"
+      ]
     ]
   }
 }
