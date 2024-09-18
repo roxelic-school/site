@@ -1,7 +1,20 @@
 {
   "\\computer science\\": {
     "\\project\\": {
-      "\\docs\\": {},
+      "\\docs\\": {
+        "base api endpoints and calls": [
+          "/content/computer science/project/docs",
+          "base api endpoints and calls",
+          "the api endpoints and calls you can make to it",
+          "18/09/2024",
+          [
+            "project",
+            "computer science",
+            "api",
+            "docs"
+          ]
+        ]
+      },
       "Initial design planning": [
         "/content/computer science/project",
         "Initial design planning",
@@ -44,7 +57,8 @@
       "/greg.jpg",
       "GREGRIGATION",
       "GREGRIGATION",
-      "17/09/2024"
+      "17/09/2024",
+      []
     ],
     "A Look at Game Balance": [
       "/content/games design/GameBalance",

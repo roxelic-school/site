@@ -56,29 +56,36 @@ function search() {
   let resultCount = 0;
   currentResults = [];
 
-  for (const category in data) {
-    if (Object.keys(data[category]).length === 0) continue;
-    for (const item in data[category]) {
-      const [url, title, desc, date, tags] = data[category][item];
-      const safeTags = tags || [];
+  function searchInObject(obj) {
+    for (const key in obj) {
+      if (obj.hasOwnProperty(key)) {
+        const value = obj[key];
+        if (Array.isArray(value) && value.length >= 5) {
+          const [url, title, desc, date, tags] = value;
+          const safeTags = tags || [];
 
-      const matchesTitle = title.toLowerCase().includes(query);
-      const matchesDesc = desc.toLowerCase().includes(query);
-      const matchesDate = date.toLowerCase().includes(query);
-      const matchesTags = safeTags.some(tag => tag.toLowerCase().includes(query));
+          const matchesTitle = title.toLowerCase().includes(query);
+          const matchesDesc = desc.toLowerCase().includes(query);
+          const matchesDate = date.toLowerCase().includes(query);
+          const matchesTags = safeTags.some(tag => tag.toLowerCase().includes(query));
 
-      if (matchesTitle || matchesDesc || matchesDate || matchesTags) {
-        if (resultCount >= 5) break;
-        currentResults.push({ url, title, date });
-        const resultElement = document.createElement('div');
-        resultElement.classList.add('file');
-        resultElement.innerHTML = `<p style="font-size:small;"><a href="${url}">${title}</a> - ${date}</p>`;
-        resultsDiv.appendChild(resultElement);
-        resultCount++;
+          if (matchesTitle || matchesDesc || matchesDate || matchesTags) {
+            if (resultCount >= 5) return; 
+            currentResults.push({ url, title, date });
+            const resultElement = document.createElement('div');
+            resultElement.classList.add('file');
+            resultElement.innerHTML = `<p style="font-size:small;"><a href="${url}">${title}</a> - ${date}</p>`;
+            resultsDiv.appendChild(resultElement);
+            resultCount++;
+          }
+        } else if (typeof value === 'object') {
+          searchInObject(value);
+        }
       }
     }
-    if (resultCount >= 5) break;
   }
+
+  searchInObject(data);
 
   if (resultCount > 0) {
     resultsDiv.style.display = 'block';
@@ -90,6 +97,7 @@ function search() {
   selectedIndex = -1;
   updateHighlightedResult();
 }
+
 
 
 
