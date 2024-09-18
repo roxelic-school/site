@@ -1,26 +1,43 @@
 {
   "\\computer science\\": {
-    "Initial design planning": [
-      "/content/computer science",
-      "Initial design planning",
-      "The initial ideas for my computer science project",
-      "17/09/2024",
-      [
-        "project",
-        "computer science"
+    "\\project\\": {
+      "\\docs\\": {},
+      "Initial design planning": [
+        "/content/computer science/project",
+        "Initial design planning",
+        "The initial ideas for my computer science project",
+        "17/09/2024",
+        [
+          "project",
+          "computer science"
+        ]
+      ],
+      "Plan outline": [
+        "/content/computer science/project/plan-outline",
+        "Plan outline",
+        "The outline of my plan",
+        "18/09/2024",
+        [
+          "project",
+          "computer science"
+        ]
       ]
-    ],
-    "Section One [0]": [
-      "/content/computer science/section1-notes",
-      "Section One [0]",
-      "The notes I took on the first lesson of Section One",
-      "18/09/2024",
-      [
-        "buses",
-        "John von Neumann",
-        "CPU"
-      ]
-    ]
+    },
+    "\\written\\": {
+      "\\topic1\\": {
+        "jhon von neumann": [
+          "/content/computer science/written/topic1",
+          "jhon von neumann",
+          "The notes I took on the first lesson of Section One",
+          "18/09/2024",
+          [
+            "buses",
+            "John von Neumann",
+            "CPU"
+          ]
+        ]
+      }
+    }
   },
   "\\games design\\": {
     "GREGRIGATION": [

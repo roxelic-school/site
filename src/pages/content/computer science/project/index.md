@@ -1,5 +1,5 @@
 ---
-layout: '../../../layouts/md/main.astro'
+layout: '../../../../layouts/md/main.astro'
 title: "Initial design planning"
 desc: "The initial ideas for my computer science project"
 upDate: 17/09/2024
