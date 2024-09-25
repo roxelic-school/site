@@ -2,7 +2,7 @@
 layout: '../../../layouts/md/main.astro'
 title: "Game development planning"
 desc: "A markdown version of my game development powerpoint"
-upDate: 17/09/2024
+upDate: 23/09/2024
 tags: ["initial project","game design","reasearch"]
 ---
 
@@ -86,7 +86,7 @@ The posters for this game often used dark colors as well as only being taken in 
 
 # Goosebumps; the game
 
-## Goosebumps: the game; developed by `wayforward technologies` as a tie in game for the upcoming movie
+## Goosebumps: the game; developed by wayforward technologies as a tie in game for the upcoming movie
 - The game sadly doesn't contain much new content as its only purpose was to tie into the upcoming movie but what it does contain is a cameo from almost every goosebumps monster (a ton of characters if you are unfamiliar with the series) which makes me believe this game was mostly centered around older fans.
 - The style of this game is a point and click adventure. Which also allowed the player to do the story in whatever order they pleased (which very much got me lost as a child) The way to progress is to clear or trap all of the monsters which was really hard to do if you were unfamiliar with the series.
 
@@ -128,4 +128,91 @@ There are 3(+1?) chapters to this game
     * Chapter 3 released on October 21, 2022
     * Which is when all 3 chapters was combine into Faith: the unholy trinity
 
-The story follows 
+# Generate Ideas
+### Mind-maps / Brainstorms / Moodboards
+The main idea that i'm going to go with for my game is a third person horror where the player starts the game getting up in the middle of the forest
+- there won't be anything explaining how they got there right away
+and throughout exploring the forest you keep seeing things in the corner of your view which disappear when you look at them
+- this will be done by using rays to keep track of the screen portions
+in the middle of the forest there's a mansion that contains clues on what's happening
+- and it will turn out there isn't anything actually there the character just has schizophrenia and got lost outside his house
+
+### Select and justify your idea to take forward. Add a brief synopsis and explain how it meets the brief and client requirements (Values / Philosophy / Focus)
+the brief requirements will be met via it being third person, expanding the fov to allow me more room to add "hallucinations"
+* it will represents the clients /values/philosophy/focus by
+    - values - typically the horror games in unreal follow a similar gameplay loop and style where the player has to discover why all this is happening from their surroundings
+    - focus - the game will have a strong mystery element to it
+
+# Pitch
+### Give a detailed breakdown of your idea including creative and technical approaches you intend to use. Consider how you plan to apply conventions to fulfil the purpose.  
+- player spawns in a forest with no explanation
+    - the forest will be randomly generated so that each play is different
+- after exploring around a little the player will start to have visual and auditory hallucinations
+    - i explained how these would be done earlier with using rays to check the player view itself
+- the player will eventually find a mansion with a key hidden under the doormat
+- the house itself will have notes and diary entries hidden around the house that lead to figuring out what is happening
+    - the closer and closer you get to the truth the game will spawn more creeks and visual hallucinations
+- once the player gets the final note the game will end
+
+### Pitch your game idea, get feedback and record here. 
+- ### What are the strengths  / area of improvement for your idea, now redraft your proposal 
+
+---
+> not done yet
+---
+
+## Give a detailed breakdown of your idea including creative and technical approaches you intend to use. Consider how you plan to apply conventions to fulfil the purpose.  
+> the forest will be randomly generated so that each play is different<br>
+    - i will use the unreal equivalent of a unity `random-place`
+
+> i explained how these would be done earlier with using rays to check the player view itself<br>
+    - the camera will have rays detecting the middle third and the two outer thirds so that when things pass into the middle it will display differently
+
+> the closer and closer you get to the truth the game will spawn more creeks and visual hallucinations
+
+# Level Design
+[![the grass layer](../../../../public/level/level-forrest.png "the grass layer")](../../../../public/level/level-forrest.png)
+[![the grass layer with key](../../../../public/level/level-forrest-key.png "the grass layer with key")](../../../../public/level/level-forrest-key.png)
+# Assets List 
+* ### ground
+    - rock instances
+    - debriss instances
+        - twigs
+        - leaves
+        - etc ..
+* ### surroundings
+    - trees
+        - ambient sounds
+            - twigs braeking
+            - birds
+            - trees shaking
+    - mansion
+        - ambient sounds
+            - creeks
+            - moving
+            - doors closing
+            - post it sounds
+* ### mansion
+    - doors
+    - random items
+        - hairbrushes
+        - cutlurry
+        - decorations
+        - post its 
+            - for the lore
+        - diary entrys
+            - for the lore
+* ### halucinations
+    - creatures
+        - dolls
+        - faces
+        - etc ..
+    - sounds
+        - creeks
+        - breathing
+        - hissing
+        - etc ..
+
+there wouldnt specifically be any issues with copy right as all im using are general asset types and such, but if i was to get these from somewhere like the unreal asset store id have to check what the copy right and useage terms of them are and credit it
+
+# concept art

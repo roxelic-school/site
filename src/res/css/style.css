@@ -3,6 +3,9 @@ html {
     background-color: black;
 }
 
+html *{
+    color: white;
+}
 hr {
     border-color: white !important;
 }
@@ -128,6 +131,7 @@ hr {
 }
 
 .file {
+    color: #d98ba1;
     background-color: #131c26;
 
     width: 100%;

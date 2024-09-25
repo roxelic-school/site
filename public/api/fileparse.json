@@ -2,11 +2,37 @@
   "\\computer science\\": {
     "\\project\\": {
       "\\docs\\": {
+        "\\endpoints\\": {
+          "me/edit": [
+            "/content/computer science/project/docs/endpoints/edit",
+            "me/edit",
+            "The api endpoint /api/v1/me/edit",
+            "23/09/2024",
+            [
+              "project",
+              "computer science",
+              "api",
+              "docs"
+            ]
+          ],
+          "me": [
+            "/content/computer science/project/docs/endpoints/me",
+            "me",
+            "The api endpoint /api/v1/me",
+            "23/09/2024",
+            [
+              "project",
+              "computer science",
+              "api",
+              "docs"
+            ]
+          ]
+        },
         "base api endpoints and calls": [
           "/content/computer science/project/docs",
           "base api endpoints and calls",
           "the api endpoints and calls you can make to it",
-          "18/09/2024",
+          "23/09/2024",
           [
             "project",
             "computer science",
@@ -25,6 +51,28 @@
           "computer science"
         ]
       ],
+      "initial ideas": [
+        "/content/computer science/project/initialideas",
+        "initial ideas",
+        "The initial ideas and refrencing of my project",
+        "18/09/2024",
+        [
+          "citations",
+          "music",
+          "rationalising"
+        ]
+      ],
+      "Log": [
+        "/content/computer science/project/log",
+        "Log",
+        "The log for my project",
+        "25/09/2024",
+        [
+          "project",
+          "computer science",
+          "logs"
+        ]
+      ],
       "Plan outline": [
         "/content/computer science/project/plan-outline",
         "Plan outline",
@@ -38,6 +86,22 @@
     },
     "\\written\\": {
       "\\topic1\\": {
+        "components and hardwear": [
+          "/content/computer science/written/topic1/components&hardwear",
+          "components and hardwear",
+          "components and hardwear of computers and computing software",
+          "25/09/2024",
+          [
+            "hardware",
+            "CPU",
+            "clock",
+            "cache",
+            "cores",
+            "pipelining",
+            "embedded systems",
+            "wordsize"
+          ]
+        ],
         "jhon von neumann": [
           "/content/computer science/written/topic1",
           "jhon von neumann",
@@ -53,12 +117,27 @@
     }
   },
   "\\games design\\": {
-    "GREGRIGATION": [
-      "/greg.jpg",
-      "GREGRIGATION",
-      "GREGRIGATION",
-      "17/09/2024",
-      []
+    "level-forrest.png": [
+      "../../../level/level-forrest.png",
+      "level forrest map",
+      "the map of the forrest level",
+      "23/09/2024",
+      [
+        "initial project",
+        "game design",
+        "reasearch"
+      ]
+    ],
+    "level-forrest-key.png": [
+      "../../../level/level-forrest-key.png",
+      "level forrest map key",
+      "the map of the forrest level with a key",
+      "23/09/2024",
+      [
+        "initial project",
+        "game design",
+        "reasearch"
+      ]
     ],
     "A Look at Game Balance": [
       "/content/games design/GameBalance",
@@ -74,7 +153,7 @@
       "/content/games design",
       "Game development planning",
       "A markdown version of my game development powerpoint",
-      "17/09/2024",
+      "23/09/2024",
       [
         "initial project",
         "game design",
