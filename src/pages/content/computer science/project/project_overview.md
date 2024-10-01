@@ -1,6 +1,6 @@
 ---
 layout: '../../../../layouts/md/main.astro'
-title: "initial ideas"
+title: "project overview"
 desc: "The initial ideas and refrencing of my project"
 upDate: 18/09/2024
 tags: ['citations', 'music', 'rationalising']
@@ -8,15 +8,34 @@ tags: ['citations', 'music', 'rationalising']
 ## project overview and rationalising
 
 My project will allow for a user or group of users, to share their love of music freely across many forms of media, with it having an open api for the public so that it can also be intergrated through into other projects, similar things to this can be seem with `LastFm` but they have a much more restricted public api.
-[//]: <>
+<line break>
 "Music sharing is one of the most important components in interactive entertainment. In recent years, mobile music market has experienced a rapid growth"(Zhao, Z.Y., Wang, C.D., Zheng, P.J., Gong, Q., Huang, K.W. and Lai, J.H., 2015, August. Music sharing platform based on sina app engine. In 2015 Ninth International Conference on Frontier of Computer Science and Technology (pp. 298-303). IEEE.)
-[//]: <>
+<line break>
+
 the growth of the music industry recently has allowed almost everyone to find a neiche that they enjoy or listen to, a flaw with this is that it is rather difficult to share your music taste with other people due to the limiations of social platforms. With the social interactions on current music sharing platforms being limited
-[//]: <>
+<line break>
 "Even on platforms such as SoundCloud where the nature of the social ties may not be strong because the social ties are on-line only and do not represent a “real world” connection," (Sams, J., 2019. Learning or Herding? Understanding Social Interactions and the Distribution of Success on a Social Music Sharing Platform. Stanford University.)
 
 ## other providers
 One of the other features my program plans to impliment is its own version of "group sessions" or "jams" currently there are 2 providers which try to offer the ability to listen as a group, that being [discords](//discord.com) `listen along` feature and [spotifys](//spotify.com) `jam` feature, the issue with both features is that they dont work well and they are expensive, with getting access to discords costing both a spotify premium subscription and a discord nitro subscription. Spotifys feature also doesnt provide an in sync listening experience as there are some very large delays to avoid this here is how i plan to make mine.
+<br><br> 
+In the social development communities that i am in there are multiple programs which have been made to attempt to do a similar music tracking thing to my project [lastFM](//lastfm.com), [airbuds](//play.google.com/store "its on the app store, and it has no web ui") and [spotistats](//https://spotistats.app/) but these all lack a compitent social interactions aspect. My goal is to bring people together in ways that havent been done before relating to music and also giving artists a dedicated platform to promote their music on.
+<line break>
+"As there are estimated to be 4.89 billion social media users by the end of 2023 (Statista 2022), using social media as a tool for personal branding is more important and effective than ever. “In a world where anyone can start a blog or create a social media profile, it has become more important than ever to have a personal brand… A personal brand allows you to control your own narrative and can help you stand out from the competition.” (White May 2020)." Rosenfeld, P., 2024. The Role of Social Media Marketing in Music Artist Promotion.
+<line break>
+
+## the problems my project will solve
+I aim to specifically make the issues ive had when trying to connect with people and intergrate my music taste into my projects something which is easily fixable, the issues ive had include
+- not being able to get my currently playing song easily, without exposing my api key
+- not being able to share my opinions on music easily because i find it difficult personally to express that through words
+- finding new songs and making playlists that ill enjoy
+- finding people who have the same music taste as me
+
+<line break>
+"In summary, the present study provides strong evidence for specific music similarity and overall music similarity in Dutch early adolescent friendships." Selfhout, M.H., Branje, S.J., ter Bogt, T.F. and Meeus, W.H., 2009. The role of music preferences in early adolescents’ friendship formation and stability. Journal of adolescence, 32(1), pp.95-107.
+<line break>
+
+Ive personally found the friends ive made that have a similar music taste to are ones that im closer to, which is why i beleive this to be a very worthwhile idea. It will allow the users to connect in a way which they cannot normally do, it would also allow them to explore more songs that they would enjoy improving both their social life and music libraries. A large portion of people I talked to before planning out this idea told me about how they either have a singular large playlist that they listen to or only listen to artists that they already know they like and are familiar with, Meaning they dont often discover newer songs sticking to the same playlists and albums, that being the main issue i plan to solve.
 
 ---
 
@@ -29,58 +48,7 @@ My platform will aim to bridge gaps between music genres and the connections bet
         - similar artists
         - similar songs
 - intergration with user made apps, with it having a strong public facing api, here is an example of an application using my account username as sample data
-    - ```py
-        import tkinter as tk
-        import math
-        import time
-        import http.client
-        import json
-        import ctypes
-        from tkinter import font
-
-        def gettrack(user, default):
-            conn = http.client.HTTPSConnection("music.foreverpain.lol")
-            conn.request("GET", f"/api/v1/user/{user}")
-            response = conn.getresponse()
-            data = response.read()
-            decoded_data = data.decode("utf-8")
-            json_data = json.loads(decoded_data)
-            conn.close
-            if (json_data.get("currentlyPlaying")):
-                return f"{json_data.get('currentlyPlaying').get('track')} by {json_data.get('currentlyPlaying').get('artist')} on {json_data.get('currentlyPlaying').get('album')}"
-            else:
-                return default
-
-        def hide_bar(event):
-            root.withdraw()
-
-        def show_bar(event):
-            root.deiconify()
-
-        def update_left_text():
-            new_text = gettrack("roxcelic","nothing is currently playing")
-            left_label.config(text=new_text)
-            root.after(3000, update_left_text)
-            
-        root = tk.Tk()
-        screen_width = root.winfo_screenwidth()
-        screen_height = root.winfo_screenheight()
-        root.geometry(f"{screen_width}x20+0+0")
-        root.overrideredirect(True)
-        root.attributes("-topmost", True)
-        custom_font = font.Font(family="Pixelify Sans", size=12)
-        bar = tk.Frame(root, height=20, bg="black")
-        left_label = tk.Label(bar, text="Initial Left Text", font=custom_font, fg="white", bg="black")
-        right_label = tk.Label(bar, text="nom"*10, font=custom_font, fg="white", bg="black")
-        left_label.pack(side="left", padx=10)
-        right_label.pack(side="right", padx=10)
-        bar.pack(side="top", fill="x")
-        bar.bind("<Enter>", hide_bar)
-        root.bind("<Leave>", show_bar)
-        update_left_text()
-        root.mainloop()
-        ```
-    - the way this works is by creating a tkinter window at the top of the users screen and displaying the data fetched from the public facing api in the top left, this can only be done if the users profile is a public profile, if it is private you will get a http 403 error with the message "users profile is private" and if the profile doesnt exist you will get a http 404 error with the message "the requested user doesnt exist
+    - [python top-bar](./examples/python_intergration)
 
 
 [

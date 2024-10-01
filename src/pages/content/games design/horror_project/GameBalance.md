@@ -1,5 +1,5 @@
 ---
-layout: '../../../layouts/md/main.astro'
+layout: '../../../../layouts/md/main.astro'
 title: "A Look at Game Balance"
 desc: "Game balance and unbalanced games"
 upDate: 17/09/2024

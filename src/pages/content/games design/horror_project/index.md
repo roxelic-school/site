@@ -1,8 +1,8 @@
 ---
-layout: '../../../layouts/md/main.astro'
+layout: '../../../../layouts/md/main.astro'
 title: "Game development planning"
 desc: "A markdown version of my game development powerpoint"
-upDate: 23/09/2024
+upDate: 01/10/2024
 tags: ["initial project","game design","reasearch"]
 ---
 
@@ -171,8 +171,8 @@ the brief requirements will be met via it being third person, expanding the fov 
 > the closer and closer you get to the truth the game will spawn more creeks and visual hallucinations
 
 # Level Design
-[![the grass layer](../../../../public/level/level-forrest.png "the grass layer")](../../../../public/level/level-forrest.png)
-[![the grass layer with key](../../../../public/level/level-forrest-key.png "the grass layer with key")](../../../../public/level/level-forrest-key.png)
+[![the grass layer](../../../../../public/level/level-forrest.png "the grass layer")](../../../../../public/level/level-forrest.png)
+[![the grass layer with key](../../../../../public/level/level-forrest-key.png "the grass layer with key")](../../../../../public/level/level-forrest-key.png)
 # Assets List 
 * ### ground
     - rock instances
@@ -214,5 +214,3 @@ the brief requirements will be met via it being third person, expanding the fov 
         - etc ..
 
 there wouldnt specifically be any issues with copy right as all im using are general asset types and such, but if i was to get these from somewhere like the unreal asset store id have to check what the copy right and useage terms of them are and credit it
-
-# concept art

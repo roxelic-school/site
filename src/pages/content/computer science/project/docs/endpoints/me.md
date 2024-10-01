@@ -5,7 +5,9 @@ desc: "The api endpoint /api/v1/me"
 upDate: 23/09/2024
 tags: ["project", "computer science", "api", "docs"]
 ---
-When calling `api/v1/me` you will need the authentication key proiveded by spotify which is typically saved in cookies which is where it will pull it from, so far i havent been able to find an alternative way to call this endpoint which was my goal but it is theoretically possible which is why it does require your access token
+when calling `/me` you will require authoirsation with the access token stored in the cookies or now middlewhere
+
+the personal profile data for the current user
 
 the headings that it will return to you are:
 - id: {spotify username/id}

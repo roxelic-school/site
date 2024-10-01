@@ -5,7 +5,7 @@ desc: "The api endpoint /api/v1/me/edit"
 upDate: 23/09/2024
 tags: ["project", "computer science", "api", "docs"]
 ---
-when calling `me/edit` you will require authoirsation with the access token stored in the cookies or now middlewhere
+when calling `/me/edit/` you will require authoirsation with the access token stored in the cookies or now middlewhere
 the edit endpoint will redirect the access and to the /me endpoint if it has been a succesful change, if it has not it will return a http error with the messed "nuh uh" the queryable data points include:
 - profilepicture
     - the url of your profile picture
@@ -60,7 +60,7 @@ the edit endpoint will redirect the access and to the /me endpoint if it has bee
     - additional checks?:
         - is an existing username?:
             - YES -- return `nuh uh`
-            - NO -- apply theme
+            - NO -- change username
 
 once this endpoint is called with any amount of querys, if a single one is to fail they all will. The request can have none or all of these querys in any ammount and it will work proplery. the current frontend structures the request in a way so that when it is called only the nessisary querys are requested
 

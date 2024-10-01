@@ -1,5 +1,5 @@
 ---
-layout: '../../../../layouts/md/main.astro'
+layout: '../../../layouts/md/main.astro'
 title: "Plan outline"
 desc: "The outline of my plan"
 upDate: 18/09/2024

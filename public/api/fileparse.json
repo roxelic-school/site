@@ -3,11 +3,59 @@
     "\\project\\": {
       "\\docs\\": {
         "\\endpoints\\": {
+          "callback": [
+            "/content/computer science/project/docs/endpoints/callback",
+            "callback",
+            "The api endpoint /callback",
+            "01/10/2024",
+            [
+              "project",
+              "computer science",
+              "api",
+              "docs"
+            ]
+          ],
+          "db": [
+            "/content/computer science/project/docs/endpoints/db",
+            "db",
+            "The api endpoint /api/v1/db",
+            "01/10/2024",
+            [
+              "project",
+              "computer science",
+              "api",
+              "docs"
+            ]
+          ],
           "me/edit": [
             "/content/computer science/project/docs/endpoints/edit",
             "me/edit",
             "The api endpoint /api/v1/me/edit",
             "23/09/2024",
+            [
+              "project",
+              "computer science",
+              "api",
+              "docs"
+            ]
+          ],
+          "me/export": [
+            "/content/computer science/project/docs/endpoints/export",
+            "me/export",
+            "The api endpoint /api/v1/me/export",
+            "01/10/2024",
+            [
+              "project",
+              "computer science",
+              "api",
+              "docs"
+            ]
+          ],
+          "me/db": [
+            "/content/computer science/project/docs/endpoints/me-db",
+            "me/db",
+            "The api endpoint /api/v1/me/db",
+            "01/10/2024",
             [
               "project",
               "computer science",
@@ -26,8 +74,57 @@
               "api",
               "docs"
             ]
+          ],
+          "tracks/:username": [
+            "/content/computer science/project/docs/endpoints/tracks",
+            "tracks/:username",
+            "The api endpoint /api/v1/tracks/:username",
+            "01/10/2024",
+            [
+              "project",
+              "computer science",
+              "api",
+              "docs"
+            ]
+          ],
+          "user/:username": [
+            "/content/computer science/project/docs/endpoints/user",
+            "user/:username",
+            "The api endpoint /api/v1/user/:username",
+            "01/10/2024",
+            [
+              "project",
+              "computer science",
+              "api",
+              "docs"
+            ]
           ]
         },
+        "\\frontends\\": {
+          "base": [
+            "/content/computer science/project/docs/frontends/base",
+            "base",
+            "the frontend /frontends/base",
+            "01/10/2024",
+            [
+              "project",
+              "computer science",
+              "frontends",
+              "docs"
+            ]
+          ]
+        },
+        "frontends": [
+          "/content/computer science/project/docs/frontends",
+          "frontends",
+          "the base frontends for my project",
+          "01/10/2024",
+          [
+            "project",
+            "computer science",
+            "docs"
+          ]
+        ],
         "base api endpoints and calls": [
           "/content/computer science/project/docs",
           "base api endpoints and calls",
@@ -37,6 +134,19 @@
             "project",
             "computer science",
             "api",
+            "docs"
+          ]
+        ]
+      },
+      "\\examples\\": {
+        "python intergration": [
+          "/content/computer science/project/examples/python_intergration",
+          "python intergration",
+          "A python script demonstarting an intergration of my tool",
+          "01/10/2024",
+          [
+            "project",
+            "computer science",
             "docs"
           ]
         ]
@@ -51,17 +161,6 @@
           "computer science"
         ]
       ],
-      "initial ideas": [
-        "/content/computer science/project/initialideas",
-        "initial ideas",
-        "The initial ideas and refrencing of my project",
-        "18/09/2024",
-        [
-          "citations",
-          "music",
-          "rationalising"
-        ]
-      ],
       "Log": [
         "/content/computer science/project/log",
         "Log",
@@ -73,14 +172,15 @@
           "logs"
         ]
       ],
-      "Plan outline": [
-        "/content/computer science/project/plan-outline",
-        "Plan outline",
-        "The outline of my plan",
+      "project overview": [
+        "/content/computer science/project/project_overview",
+        "project overview",
+        "The initial ideas and refrencing of my project",
         "18/09/2024",
         [
-          "project",
-          "computer science"
+          "citations",
+          "music",
+          "rationalising"
         ]
       ]
     },
@@ -117,47 +217,77 @@
     }
   },
   "\\games design\\": {
-    "level-forrest.png": [
-      "../../../level/level-forrest.png",
-      "level forrest map",
-      "the map of the forrest level",
-      "23/09/2024",
-      [
-        "initial project",
-        "game design",
-        "reasearch"
+    "\\horror_project\\": {
+      "\\assets\\": {
+        "level-forrest.png": [
+          "../../../level/level-forrest.png",
+          "level forrest map",
+          "the map of the forrest level",
+          "23/09/2024",
+          [
+            "initial project",
+            "game design",
+            "reasearch"
+          ]
+        ],
+        "level-forrest-key.png": [
+          "../../../level/level-forrest-key.png",
+          "level forrest map key",
+          "the map of the forrest level with a key",
+          "23/09/2024",
+          [
+            "initial project",
+            "game design",
+            "reasearch"
+          ]
+        ]
+      },
+      "\\dir\\": {
+        "\\assets-files\\": {}
+      },
+      "A Look at Game Balance": [
+        "/content/games design/horror_project/GameBalance",
+        "A Look at Game Balance",
+        "Game balance and unbalanced games",
+        "17/09/2024",
+        [
+          "game balance",
+          "game design"
+        ]
+      ],
+      "Game development planning": [
+        "/content/games design/horror_project",
+        "Game development planning",
+        "A markdown version of my game development powerpoint",
+        "01/10/2024",
+        [
+          "initial project",
+          "game design",
+          "reasearch"
+        ]
+      ],
+      "log": [
+        "/content/games design/horror_project/log",
+        "log",
+        "The log for my horror game project",
+        "01/10/2024",
+        [
+          "initial project",
+          "game design",
+          "development"
+        ]
       ]
-    ],
-    "level-forrest-key.png": [
-      "../../../level/level-forrest-key.png",
-      "level forrest map key",
-      "the map of the forrest level with a key",
-      "23/09/2024",
+    }
+  },
+  "\\outdated\\": {
+    "Plan outline": [
+      "/content/outdated/plan-outline",
+      "Plan outline",
+      "The outline of my plan",
+      "18/09/2024",
       [
-        "initial project",
-        "game design",
-        "reasearch"
-      ]
-    ],
-    "A Look at Game Balance": [
-      "/content/games design/GameBalance",
-      "A Look at Game Balance",
-      "Game balance and unbalanced games",
-      "17/09/2024",
-      [
-        "game balance",
-        "game design"
-      ]
-    ],
-    "Game development planning": [
-      "/content/games design",
-      "Game development planning",
-      "A markdown version of my game development powerpoint",
-      "23/09/2024",
-      [
-        "initial project",
-        "game design",
-        "reasearch"
+        "project",
+        "computer science"
       ]
     ]
   }
