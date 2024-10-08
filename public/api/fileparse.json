@@ -202,6 +202,29 @@
             "wordsize"
           ]
         ],
+        "CPU architecture": [
+          "/content/computer science/written/topic1/CPUarchitecture",
+          "CPU architecture",
+          "the notes i took in lesson 3",
+          "02/10/2024",
+          [
+            "harvard architecture",
+            "cpu",
+            "cpu types",
+            "cisc",
+            "risc",
+            "OCR lies",
+            "co processor",
+            "co-processor",
+            "gpu",
+            "parallel processor",
+            "SISD",
+            "SIMD",
+            "MISD",
+            "MIMD",
+            "modified harvard architecture"
+          ]
+        ],
         "jhon von neumann": [
           "/content/computer science/written/topic1",
           "jhon von neumann",
